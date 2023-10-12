@@ -1,15 +1,20 @@
 """
-Inserta el encabezado aquí y escribe tu código abajo
+Diseña un programa para determinar el número de vocales en una frase.
 """
+#Entradas
+palabra = input("Introduzca una frase: ")
+palabra = palabra.lower()
 
-# Declaraciones
-CONSTANTE = valor
+#Procesos
+contador_vocales = 0
+vocales = ['a', 'e', 'i', 'o', 'u']
 
-# Entradas
-entrada = input()
+for caracter in palabra:
+    if caracter in vocales:
+        contador_vocales += 1
 
-# Proceso
+# Salida
+print(f"la frase tiene {contador_vocales} vocales")
 
 
-# Salidas
-print(salida)
+
